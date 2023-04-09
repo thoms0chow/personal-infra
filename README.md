@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project
+# Personal Infrastructure CDK Project
 
-This is a blank project for CDK development with TypeScript.
+## Proxy
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Minimal proxy infrastructure project using [go-shadowsocks2](https://github.com/shadowsocks/go-shadowsocks2)
 
-## Useful commands
+### Setup
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+Add 2 AWS SSM parameters
+
+- `SS_ALGORITHM`
+- `SS_PASSWORD`
